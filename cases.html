@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><title>Retest cases</title><meta name="sample-version" content="1"></head>
+<body><main>
+<h1>Retest cases</h1>
+<section id="s1"><h2>Unchanged image</h2>
+<img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='60'><rect width='120' height='60' fill='%23205080'/></svg>" width="120" height="60">
+</section>
+<section id="s2"><h2>Unchanged contrast</h2>
+<p style="color:#b5b5b5;background:#ffffff">This grey sentence never changes between versions.</p>
+</section>
+<section id="s3"><h2>Unchanged field</h2>
+<input type="text" name="keep">
+</section>
+<section id="s4"><h2>Fixed image</h2>
+<img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='60'><rect width='120' height='60' fill='%23205080'/></svg>" width="120" height="60">
+</section>
+<section id="s5"><h2>Fixed contrast</h2>
+<p style="color:#b5b5b5;background:#ffffff">This sentence gets a dark colour later.</p>
+</section>
+<section id="s6"><h2>Fixed button</h2>
+<button type="button"></button>
+</section>
+<section id="s7"><h2>Fixed field</h2>
+<input type="text" name="fixme">
+</section>
+<section id="s8"><h2>Fixed by removal</h2>
+<img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='60'><rect width='120' height='60' fill='%23205080'/></svg>" width="120" height="60"><p>Text stays.</p>
+</section>
+<section id="s9"><h2>New errors</h2>
+<p>Nothing wrong here at first.</p>
+</section>
+<section id="s10"><h2>Moved with id, start</h2>
+<p>Start box.</p>
+<img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='60'><rect width='120' height='60' fill='%23205080'/></svg>" width="120" height="60" id="mover">
+</section>
+<section id="s11"><h2>Moved with id, end</h2>
+<p>End box.</p>
+
+</section>
+<section id="s12"><h2>Wrapper added</h2>
+<img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='60'><rect width='120' height='60' fill='%23205080'/></svg>" width="120" height="60">
+</section>
+<section id="s13"><h2>Sibling inserted before</h2>
+<p style="color:#b5b5b5;background:#ffffff">Grey sentence that gets pushed down.</p>
+</section>
+<section id="s14"><h2>First of two removed</h2>
+<div><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='60'><rect width='120' height='60' fill='%23205080'/></svg>" width="120" height="60" class="first"><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='60'><rect width='120' height='60' fill='%23205080'/></svg>" width="120" height="60" class="second"></div>
+</section>
+<section id="s15"><h2>Same error, new words</h2>
+<p style="color:#b5b5b5;background:#ffffff">Old wording of the grey sentence.</p>
+</section>
+<section id="s16"><h2>Still failing, less badly</h2>
+<p style="color:#cccccc;background:#ffffff">Grey sentence at a different ratio.</p>
+</section>
+<section id="s17"><h2>Replaced with a weak fix</h2>
+<img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='60'><rect width='120' height='60' fill='%23205080'/></svg>" width="120" height="60">
+</section>
+<section id="s18"><h2>Attributes changed, same error</h2>
+<input type="text" name="a1">
+</section>
+</main></body></html>
